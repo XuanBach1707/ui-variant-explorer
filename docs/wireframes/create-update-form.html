@@ -1,0 +1,94 @@
+<!--
+WIREFRAME: User Create / Update Form
+Purpose  : Layout reference — KHÔNG copy inline style, chỉ tham khảo cấu trúc
+Screens  : docs/screens/create-update-form.md
+Note     : Unified component cho cả Create và Update mode.
+-->
+<div 
+  id="form-overlay" 
+  style="display: flex; justify-content: flex-end; width: 100vw; height: 100vh; background: rgba(0,0,0,0.2); font-family: sans-serif;"
+>
+
+  <aside 
+    id="user-form-panel" 
+    style="width: 500px; background: white; box-shadow: -4px 0 15px rgba(0,0,0,0.1); display: flex; flex-direction: column; height: 100%;"
+  >
+    
+    <header style="padding: 20px 24px; border-bottom: 1px solid #e2e8f0; display: flex; justify-content: space-between; align-items: center;">
+      <h2 style="margin: 0; font-size: 18px; color: #0f172a;">Cập nhật người dùng</h2>
+      <button style="background: none; border: none; font-size: 20px; cursor: pointer; color: #94a3b8;">✕</button>
+    </header>
+
+    <div style="flex: 1; padding: 24px; overflow-y: auto;">
+      <form style="display: flex; flex-direction: column; gap: 24px;">
+
+        <div style="display: flex; flex-direction: column; gap: 8px;">
+          <label style="font-size: 13px; font-weight: bold; color: #475569;">
+            Họ và tên <span style="color: #ef4444;">*</span>
+          </label>
+          <input 
+            type="text" 
+            value="Nguyễn Văn An" 
+            autofocus
+            style="padding: 10px; border: 1px solid #cbd5e1; border-radius: 4px; font-size: 14px;"
+          />
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 8px;">
+          <label style="font-size: 13px; font-weight: bold; color: #475569;">
+            Email <span style="color: #ef4444;">*</span>
+          </label>
+          <input 
+            type="email" 
+            value="an.nguyen@company.vn" 
+            style="padding: 10px; border: 1px solid #cbd5e1; border-radius: 4px; font-size: 14px;"
+          />
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+          <div style="display: flex; flex-direction: column; gap: 8px;">
+            <label style="font-size: 13px; font-weight: bold; color: #475569;">Số điện thoại</label>
+            <input type="text" value="0901234567" style="padding: 10px; border: 1px solid #cbd5e1; border-radius: 4px; font-size: 14px;" />
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 8px;">
+            <label style="font-size: 13px; font-weight: bold; color: #475569;">Chức danh</label>
+            <input type="text" value="Trưởng phòng Kỹ thuật" style="padding: 10px; border: 1px solid #cbd5e1; border-radius: 4px; font-size: 14px;" />
+          </div>
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 8px;">
+          <label style="font-size: 13px; font-weight: bold; color: #475569;">
+            Tổ chức <span style="color: #ef4444;">*</span>
+          </label>
+          <select style="padding: 10px; border: 1px solid #cbd5e1; border-radius: 4px; font-size: 14px; background: white;">
+            <option>Phòng Kỹ thuật</option>
+            <option>Phòng Hành chính</option>
+            <option>Phòng Kế toán</option>
+          </select>
+        </div>
+
+        <div style="display: flex; align-items: center; justify-content: space-between; padding: 12px; background: #f8f9fa; border-radius: 6px;">
+          <div>
+            <div style="font-size: 14px; font-weight: bold; color: #334155;">Trạng thái hoạt động</div>
+            <div style="font-size: 12px; color: #64748b;">Cho phép người dùng đăng nhập hệ thống</div>
+          </div>
+          <div style="width: 40px; height: 20px; background: #22c55e; border-radius: 10px; position: relative; cursor: pointer;">
+            <div style="width: 16px; height: 16px; background: white; border-radius: 50%; position: absolute; right: 2px; top: 2px;"></div>
+          </div>
+        </div>
+
+      </form>
+    </div>
+
+    <footer style="padding: 16px 24px; border-top: 1px solid #e2e8f0; display: flex; justify-content: flex-end; gap: 12px; background: #fcfcfc;">
+      <button style="padding: 10px 20px; background: white; border: 1px solid #cbd5e1; border-radius: 6px; cursor: pointer; color: #475569;">
+        Hủy
+      </button>
+      <button style="padding: 10px 20px; background: #2563eb; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: bold;">
+        Lưu thay đổi
+      </button>
+    </footer>
+
+  </aside>
+
+</div>
