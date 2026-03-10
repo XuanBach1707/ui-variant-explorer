@@ -8,16 +8,16 @@ AI đọc file này, chọn 3 style phù hợp nhất với `input/brief.md`, sa
 
 | # | Style | Phù hợp với |
 |---|---|---|
-| 01 | [Minimal / Clean](variants/01-minimal.md) | Settings, profile, form đơn giản |
-| 02 | [Enterprise / Data-Dense](variants/02-enterprise.md) | Admin panel, CRM, quản lý dữ liệu |
-| 03 | [Card-Based](variants/03-card-based.md) | User list, catalog, directory |
-| 04 | [Dashboard / Analytics](variants/04-dashboard.md) | Overview, monitoring, reporting |
-| 05 | [Mobile-First / Compact](variants/05-mobile-first.md) | App điện thoại, field worker |
-| 06 | [Editorial / Content-Rich](variants/06-editorial.md) | Profile detail, article, read-only view |
-| 07 | [Dark Mode](variants/07-dark-mode.md) | Developer tool, monitoring, media |
-| 08 | [Glassmorphism](variants/08-glassmorphism.md) | Login, landing, onboarding |
-| 09 | [Material / Flat](variants/09-material.md) | Mobile web, form-heavy, Google-style |
-| 10 | [Brutalist](variants/10-brutalist.md) | Internal tool, hackathon, anti-design |
+| 01 | [Minimal / Clean](variants/01-minimal-design.md) | Settings, profile, form đơn giản |
+| 02 | [Enterprise / Data-Dense](variants/02-enterprise-design.md) | Admin panel, CRM, quản lý dữ liệu |
+| 03 | [Material Design](variants/03-material-design.md) | Mobile web, form-heavy, Google-style |
+| 04 | [Flat Design](variants/04-flat-design.md) | App đơn giản, icon system, illustration |
+| 05 | [Glassmorphism](variants/05-glassmorphism-design.md) | Login, landing, onboarding |
+| 06 | [Neumorphism](variants/06-neumorphism-design.md) | Dashboard nhẹ, app cá nhân |
+| 07 | [Neo-Brutalism](variants/07-neo-brutalism-design.md) | Internal tool, hackathon, anti-design |
+| 08 | [Cyberpunk / Neon](variants/08-cyberpunk-neon-design.md) | Gaming, dark entertainment, developer tool |
+| 09 | [Claymorphism](variants/09-claymorphism-design.md) | App trẻ em, consumer app, playful UI |
+| 10 | [Aurora / Organic](variants/10-aurora-organic-design.md) | Landing premium, wellness, luxury brand |
 | 11 | [Swiss / Typographic](variants/11-swiss-typographic-design.md) | Editorial, publication, typography-driven |
 
 ---
