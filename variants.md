@@ -1,67 +1,30 @@
-# Design Variant Styles
+# Design Variant Styles — Index
 
-AI đọc file này, chọn 3 style phù hợp nhất với `input/brief.md`, sau đó generate 3 variant tương ứng.
-
-Tiêu chí chọn: phù hợp với user goal, constraints, và độ phức tạp của content.
+AI đọc file này, chọn 3 style phù hợp nhất với `input/brief.md`, sau đó đọc file chi tiết tương ứng trong `variants/` trước khi generate.
 
 ---
 
-## 1. Minimal / Clean
-- Nhiều whitespace, typography làm chủ đạo
-- Màu sắc tối giản: 1 accent color, còn lại là neutral
-- Không border thừa, không shadow nặng
-- Phù hợp: dashboard đơn giản, profile, settings
+## Danh sách
 
-## 2. Enterprise / Data-Dense
-- Thông tin nhiều, layout compact, ít padding
-- Table-heavy, badge trạng thái rõ ràng
-- Sidebar navigation, toolbar cố định
-- Phù hợp: admin panel, báo cáo, quản lý dữ liệu lớn
+| # | Style | Phù hợp với |
+|---|---|---|
+| 01 | [Minimal / Clean](variants/01-minimal.md) | Settings, profile, form đơn giản |
+| 02 | [Enterprise / Data-Dense](variants/02-enterprise.md) | Admin panel, CRM, quản lý dữ liệu |
+| 03 | [Card-Based](variants/03-card-based.md) | User list, catalog, directory |
+| 04 | [Dashboard / Analytics](variants/04-dashboard.md) | Overview, monitoring, reporting |
+| 05 | [Mobile-First / Compact](variants/05-mobile-first.md) | App điện thoại, field worker |
+| 06 | [Editorial / Content-Rich](variants/06-editorial.md) | Profile detail, article, read-only view |
+| 07 | [Dark Mode](variants/07-dark-mode.md) | Developer tool, monitoring, media |
+| 08 | [Glassmorphism](variants/08-glassmorphism.md) | Login, landing, onboarding |
+| 09 | [Material / Flat](variants/09-material.md) | Mobile web, form-heavy, Google-style |
+| 10 | [Brutalist](variants/10-brutalist.md) | Internal tool, hackathon, anti-design |
+| 11 | [Swiss / Typographic](variants/11-swiss-typographic-design.md) | Editorial, publication, typography-driven |
 
-## 3. Card-Based
-- Content chia thành các card có shadow nhẹ
-- Grid layout, mỗi card tự chứa một đơn vị thông tin
-- Hover state rõ, click target lớn
-- Phù hợp: danh sách sản phẩm, user list, content feed
+---
 
-## 4. Dashboard / Analytics
-- Metric nổi bật với số lớn và icon
-- Chart placeholder (bar, line, donut)
-- Color-coded status, progress bar
-- Phù hợp: overview screen, báo cáo tổng hợp
+## Cách AI chọn
 
-## 5. Mobile-First / Compact
-- Column đơn, full-width element
-- Large tap target (min 44px), bottom action bar
-- Sticky header, collapsible section
-- Phù hợp: màn hình dùng trên điện thoại hoặc tablet
-
-## 6. Editorial / Magazine
-- Typography hierarchy mạnh (display font, subheading, body)
-- Ảnh/avatar chiếm diện tích lớn
-- Horizontal rule, pull quote, section divider rõ
-- Phù hợp: profile, article, content detail page
-
-## 7. Dark / High Contrast
-- Background tối (slate-900 hoặc zinc-900)
-- Text sáng, accent color neon hoặc vivid
-- Border subtle, glow effect nhẹ
-- Phù hợp: developer tool, monitoring screen, media player
-
-## 8. Glassmorphism / Modern
-- Background blur (backdrop-filter), semi-transparent card
-- Gradient subtle, border rgba mờ
-- Shadow lan rộng, depth rõ ràng
-- Phù hợp: landing page, hero section, marketing screen
-
-## 9. Flat / Material-Inspired
-- Shadow theo elevation rõ (shadow-sm → shadow-lg theo cấp độ)
-- Color fill mạnh cho primary action
-- Ripple/state layer được chú ý
-- Phù hợp: app mobile web, form-heavy screen
-
-## 10. Brutalist / High-Contrast Utility
-- Border đen dày, không bo góc
-- Font monospace hoặc bold heavy
-- Màu solid mạnh, không gradient
-- Phù hợp: internal tool, developer dashboard, thử nghiệm táo bạo
+1. Đọc `user goal` và `constraints` trong `input/brief.md`
+2. Loại bỏ style không phù hợp với constraint (ví dụ: Glassmorphism nếu cần accessibility cao)
+3. Chọn 3 style tạo ra sự **đối lập rõ ràng** với nhau — không chọn 3 style na ná nhau
+4. Thông báo lựa chọn + lý do ngắn trước khi generate
